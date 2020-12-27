@@ -155,7 +155,7 @@ if __name__ == '__main__':
     all_sprites = pygame.sprite.Group()
     tiles_group = pygame.sprite.Group()
     player_group = pygame.sprite.Group()
-    file = input()
+    file = input("Введите название файла с картой из папки maps(maps/ писать не надо): ")
     level = load_level(file)
     player, level_x, level_y = generate_level(load_level(file))
     clock = pygame.time.Clock()
